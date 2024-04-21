@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+    <header class="header">
+        <h1 class="text">Quick Track</h1>
+        <div class="toggle-icon">=</div>
+        <div class="button-menu">
+            <button onclick="goToFirstPage1()">Track</button>
+            <button onclick="goToSecondPage2()">Analytics</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Quick Tracker</h2>
+        <input type="text" id="taskInput" placeholder="What are you working on?">
+        <button id="startButton" onclick="startTimer()">Start</button>
+        <button id="stopButton" onclick="stopTimer()" disabled>Stop</button>
+        <div id="timer">00:00:00</div>
+        <div id="taskList"></div>
+    </div>
+    <script>function goToSecondPage2() {
+            window.location.href = "Analytics.html";
+        }
+        
+        document.querySelector('.toggle-icon').addEventListener('click',toggleMenu)
+        function toggleMenu(){
+            document.querySelector('.button-menu').classList.toggle('visible')
+        }
+        
+        </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
